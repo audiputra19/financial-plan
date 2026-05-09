@@ -102,8 +102,9 @@ const MyWallets: FC = () => {
                                         </div>
                                         <div 
                                             className={clsx(
-                                                "border border-base-300 w-8 h-8 rounded-2xl flex justify-center",
-                                                "items-center bg-base-200 text-base-content cursor-pointer"
+                                                "p-2 rounded-lg flex justify-center hover:bg-base-300/60",
+                                                "items-center bg-base-200 text-base-content/60 cursor-pointer",
+                                                "active:scale-90 transition-transform"
                                             )}
                                             onClick={() => {
                                                 setVisibileAll(!visibleAll);

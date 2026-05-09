@@ -112,7 +112,7 @@ const Navbar: FC = () => {
                     <div 
                         className={clsx(
                             "bg-white/10 md:bg-base-200 p-1.5 rounded-xl transition-transform",
-                            "cursor-pointer hover:bg-base-300/60 active:scale-90"
+                            "cursor-pointer lg:hover:bg-base-300/60 active:scale-90"
                         )}
                     >
                         <ThemeSwitcher />

@@ -37,28 +37,30 @@ export const MyWalletCard: FC<MyWalletProps>  = ({
                         <header className="flex justify-between items-center p-5">
                             <div 
                                 className={clsx(
-                                    "border border-base-300 bg-base-200 p-2 rounded-2xl flex gap-1",
-                                    "font-semibold"
+                                    "p-2 rounded-2xl flex gap-1",
+                                    "font-semibold",
                                 )}
+                                style={{ backgroundColor: item.color }}
                             >
                                 <div 
                                     className={clsx(
                                         "w-4 h-4 text-xs rounded-full flex justify-center items-center",
-                                        "text-white"
+                                        "text-white bg-white"
                                     )}
-                                    style={{ backgroundColor: item.color }}
+                                    style={{ color: item.color }}
                                 >
                                     {item.accountName.charAt(0)}
                                 </div>
-                                <div className="text-xs text-base-content font-bold">
+                                <div className="text-xs text-white font-bold">
                                     {item.accountName}
                                 </div>
                             </div>
                             <div className="flex gap-3">
                                 <div 
                                     className={clsx(
-                                        "border border-base-300 w-8 h-8 rounded-2xl flex justify-center",
-                                        "items-center bg-base-200 text-base-content cursor-pointer"
+                                        "p-2 rounded-lg flex justify-center hover:bg-base-300/60",
+                                        "items-center bg-base-200 text-base-content/60 cursor-pointer",
+                                        "active:scale-90 transition-transform"
                                     )}
                                     onClick={() => toggleVisibility(item.id)}
                                 >
@@ -70,8 +72,9 @@ export const MyWalletCard: FC<MyWalletProps>  = ({
                                 </div>
                                 <div 
                                     className={clsx(
-                                        "border border-base-300 w-8 h-8 rounded-2xl flex justify-center",
-                                        "items-center bg-base-200 text-base-content cursor-pointer"
+                                        "p-2 rounded-lg flex justify-center hover:bg-base-300/60",
+                                        "items-center bg-base-200 text-base-content/60 cursor-pointer",
+                                        "active:scale-90 transition-transform"
                                     )}
                                 >
                                     <TbEdit size={20}/>
@@ -94,10 +97,10 @@ export const MyWalletCard: FC<MyWalletProps>  = ({
                         <footer className="flex justify-end p-2 border-t border-base-300">
                             <button 
                                 className={clsx(
-                                    "bg-base-200 p-2 rounded-2xl flex gap-1 items-center text-xs",
-                                    "font-semibold cursor-pointer text-base-content",
-                                    "border border-base-300",
-                                    "hover:bg-base-300/70"
+                                    "bg-base-200 py-3 px-4 rounded-lg flex gap-1 items-center text-xs",
+                                    "font-bold cursor-pointer text-base-content",
+                                    "hover:bg-base-300/60",
+                                    "active:scale-90 transition-transform"
                                 )}
                             >
                                 View All Activity

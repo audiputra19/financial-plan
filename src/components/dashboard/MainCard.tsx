@@ -27,7 +27,7 @@ export const MainCard: FC<MainCardProps>  = ({ items }) => {
                     className={clsx(
                         "border border-base-300 bg-base-100 rounded-2xl group/item cursor-pointer",
                         "transition-transform duration-500 text-left",
-                        "hover:scale-102"
+                        "lg:hover:scale-102 active:scale-90"
                     )}
                 >
                     <section 
@@ -38,8 +38,7 @@ export const MainCard: FC<MainCardProps>  = ({ items }) => {
                         <div className="flex gap-3 items-start">
                             <div 
                                 className={clsx(
-                                    "p-2 bg-base-200 text-base-content rounded-2xl flex-none text-primary",
-                                    "border border-base-300"
+                                    "p-3 bg-base-200 text-base-content rounded-2xl flex-none text-primary",
                                 )}
                             >
                                 {item.icon}

@@ -211,7 +211,7 @@ const QuickAdd: FC = () => {
                                         }))
                                     }
                                 >
-                                    Save
+                                    Save Transaction
                                 </button>
                             </div>
                         </section>
