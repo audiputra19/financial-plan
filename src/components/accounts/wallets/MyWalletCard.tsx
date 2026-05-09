@@ -58,9 +58,9 @@ export const MyWalletCard: FC<MyWalletProps>  = ({
                             <div className="flex gap-3">
                                 <div 
                                     className={clsx(
-                                        "p-2 rounded-lg flex justify-center hover:bg-base-300/60",
+                                        "p-2 rounded-lg flex justify-center",
                                         "items-center bg-base-200 text-base-content/60 cursor-pointer",
-                                        "active:scale-90 transition-transform"
+                                        "lg:hover:bg-base-300/60 active:scale-90 transition-transform"
                                     )}
                                     onClick={() => toggleVisibility(item.id)}
                                 >
@@ -72,9 +72,9 @@ export const MyWalletCard: FC<MyWalletProps>  = ({
                                 </div>
                                 <div 
                                     className={clsx(
-                                        "p-2 rounded-lg flex justify-center hover:bg-base-300/60",
+                                        "p-2 rounded-lg flex justify-center",
                                         "items-center bg-base-200 text-base-content/60 cursor-pointer",
-                                        "active:scale-90 transition-transform"
+                                        "lg:hover:bg-base-300/60 active:scale-90 transition-transform"
                                     )}
                                 >
                                     <TbEdit size={20}/>
@@ -99,7 +99,7 @@ export const MyWalletCard: FC<MyWalletProps>  = ({
                                 className={clsx(
                                     "bg-base-200 py-3 px-4 rounded-lg flex gap-1 items-center text-xs",
                                     "font-bold cursor-pointer text-base-content",
-                                    "hover:bg-base-300/60",
+                                    "lg:hover:bg-base-300/60",
                                     "active:scale-90 transition-transform"
                                 )}
                             >

@@ -88,8 +88,8 @@ const Budgeting: FC = () => {
                     <button
                         className={clsx(
                             "mt-8 w-full py-4 rounded-2xl text-white flex justify-center items-center gap-2",
-                            "bg-primary hover:bg-primary/90 font-black text-primary-content duration-500",
-                            "cursor-pointer hover:-translate-y-1 active:scale-98"
+                            "bg-primary lg:hover:bg-primary/90 font-black text-primary-content lg:duration-500",
+                            "transition-transform cursor-pointer lg:hover:-translate-y-1 active:scale-95"
                         )}
                     >
                         Adjust Budget

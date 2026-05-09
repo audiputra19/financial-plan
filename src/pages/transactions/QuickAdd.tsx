@@ -196,12 +196,12 @@ const QuickAdd: FC = () => {
                                 <button
                                     className={clsx(
                                         form.transactionType === 'income' 
-                                        ? "bg-warning text-warning-content hover:bg-warning/90"
-                                        : "bg-primary text-primary-content hover:bg-primary/90",
+                                        ? "bg-warning text-warning-content lg:hover:bg-warning/90"
+                                        : "bg-primary text-primary-content lg:hover:bg-primary/90",
                                         "py-4 rounded-2xl flex justify-center font-black",
-                                        "items-center gap-1 cursor-pointer transition-all",
-                                        "duration-300 mt-3",
-                                        "hover:-translate-y-0.5"
+                                        "items-center gap-1 cursor-pointer transition-transform",
+                                        "lg:duration-300 mt-3",
+                                        "lg:hover:-translate-y-0.5 active:scale-95"
                                     )}
                                     value={form.note}
                                     onChange={(e) => 

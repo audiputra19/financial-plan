@@ -108,8 +108,8 @@ export const TransactionCard: FC<TransactionCardProps> = ({ items }) => {
                                 <div className="flex gap-3">
                                     <button 
                                         className={clsx(
-                                            "p-2 bg-base-200 hover:bg-base-300/60 text-base-content/60", 
-                                            "hover:text-primary rounded-lg cursor-pointer",
+                                            "p-2 bg-base-200 lg:hover:bg-base-300/60 text-base-content/60", 
+                                            "lg:hover:text-primary rounded-lg cursor-pointer",
                                             "active:scale-90 transition-transform"
                                         )}
                                     >
@@ -117,8 +117,8 @@ export const TransactionCard: FC<TransactionCardProps> = ({ items }) => {
                                     </button>
                                     <button 
                                         className={clsx(
-                                            "p-2 bg-base-200 hover:bg-base-300/60 text-base-content/60", 
-                                            "hover:text-error rounded-lg cursor-pointer",
+                                            "p-2 bg-base-200 lg:hover:bg-base-300/60 text-base-content/60", 
+                                            "lg:hover:text-error rounded-lg cursor-pointer",
                                             "active:scale-90 transition-transform"
                                         )}
                                     >
