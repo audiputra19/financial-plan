@@ -41,11 +41,28 @@ const MyWallets: FC = () => {
     const wallets = [
         {
             id: 1,
-            accountName: 'ShopeePay',
-            value: 20000000,
-            color: '#FE9A37',
+            accountName: 'GoPay',
+            value: 1000000,
+            color: '#00AED6',
         },
-        
+        {
+            id: 2,
+            accountName: 'Bibit',
+            value: 20000000,
+            color: '#10B981',
+        },
+        {
+            id: 3,
+            accountName: 'Bank Mandiri',
+            value: 5000000,
+            color: '#085B94',
+        },
+        {
+            id: 4,
+            accountName: 'Bank BSI',
+            value: 3000000,
+            color: '#14B8A6',
+        },
     ];
 
     const totalBalance = wallets.reduce((acc, wallet) => acc + wallet.value, 0);
@@ -63,10 +80,10 @@ const MyWallets: FC = () => {
                     <div>
                         <div 
                             className={clsx(
-                                "py-2 px-3 rounded-2xl bg-warning text-primary-content text-xs",
+                                "py-2 px-3 rounded-2xl bg-primary text-primary-content text-xs",
                                 "flex items-center gap-1 font-semibold cursor-pointer transition-transform",
                                 "duration-300",
-                                "hover:bg-warning/90 hover:-translate-y-0.5 active:scale-98"
+                                "lg:hover:bg-primary/90 lg:hover:-translate-y-0.5 active:scale-98"
                             )}
                             onClick={() => setIsAddModalOpen(true)}
                         >

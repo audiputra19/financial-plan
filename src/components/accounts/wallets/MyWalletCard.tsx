@@ -34,18 +34,18 @@ export const MyWalletCard: FC<MyWalletProps>  = ({
                             "bg-base-100 flex flex-col"
                         )}
                     >
-                        <header className="flex justify-between items-center p-5">
+                        <header className="flex flex-wrap justify-between items-center p-5 gap-3">
                             <div 
                                 className={clsx(
-                                    "p-2 rounded-2xl flex gap-1",
-                                    "font-semibold",
+                                    "p-2 rounded-2xl flex gap-1.5",
+                                    "font-semibold max-w-full",
                                 )}
                                 style={{ backgroundColor: item.color }}
                             >
                                 <div 
                                     className={clsx(
                                         "w-4 h-4 text-xs rounded-full flex justify-center items-center",
-                                        "text-white bg-white"
+                                        "text-white bg-white font-black"
                                     )}
                                     style={{ color: item.color }}
                                 >
@@ -100,7 +100,7 @@ export const MyWalletCard: FC<MyWalletProps>  = ({
                                     "bg-base-200 py-3 px-4 rounded-lg flex gap-1 items-center text-xs",
                                     "font-bold cursor-pointer text-base-content",
                                     "lg:hover:bg-base-300/60",
-                                    "active:scale-90 transition-transform"
+                                    "active:scale-95 transition-transform"
                                 )}
                             >
                                 View All Activity

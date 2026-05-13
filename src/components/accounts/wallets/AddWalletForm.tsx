@@ -168,8 +168,8 @@ export const AddWalletForm: FC<AddWalletFormProps> = ({
                     <button
                         className={clsx(
                             "mt-5 w-full py-4 rounded-2xl text-white flex justify-center items-center gap-2",
-                            "bg-warning lg:hover:bg-warning/90 font-black text-warning-content lg:duration-500",
-                            "transition-transform cursor-pointer lg:hover:-translate-y-1 active:scale-95"
+                            "bg-primary  font-black text-primary-content lg:duration-500",
+                            "transition-transform cursor-pointer lg:hover:-translate-y-1 active:scale-98",
                         )}
                     >
                         Create Wallet

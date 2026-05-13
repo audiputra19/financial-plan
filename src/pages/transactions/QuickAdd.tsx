@@ -201,7 +201,7 @@ const QuickAdd: FC = () => {
                                         "py-4 rounded-2xl flex justify-center font-black",
                                         "items-center gap-1 cursor-pointer transition-transform",
                                         "lg:duration-300 mt-3",
-                                        "lg:hover:-translate-y-0.5 active:scale-95"
+                                        "lg:hover:-translate-y-0.5 active:scale-98"
                                     )}
                                     value={form.note}
                                     onChange={(e) => 

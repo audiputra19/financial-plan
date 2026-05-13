@@ -27,7 +27,7 @@ export const MainCard: FC<MainCardProps>  = ({ items }) => {
                     className={clsx(
                         "border border-base-300 bg-base-100 rounded-2xl group/item cursor-pointer",
                         "transition-transform duration-500 text-left",
-                        "lg:hover:scale-102 active:scale-90"
+                        "lg:hover:scale-102 active:scale-95"
                     )}
                 >
                     <section 

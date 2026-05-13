@@ -82,7 +82,7 @@ export const TransactionCard: FC<TransactionCardProps> = ({ items }) => {
                                             <span 
                                                 className={clsx(
                                                     "px-2 py-0.5 bg-base-content/5 rounded-md font-bold",
-                                                    "italic truncate max-w-[110px]",
+                                                    "italic truncate max-w-[110px] capitalize",
                                                     isExpense ? "text-warning" : "text-primary",
                                                 )}
                                             >
